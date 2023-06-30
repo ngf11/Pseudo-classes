@@ -1,0 +1,35 @@
+#box1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "bnt bnt bnt"
+    "bnt bnt bnt"
+    "bnt bnt bnt";
+  gap: 1rem;
+  padding: 4rem;
+}
+
+button {
+  padding: 2rem;
+}
+
+.bnt:hover {
+  border: 1rem solid black;
+}
+li {
+  list-style-type: none;
+}
+
+li:nth-child(odd) {
+  font-size: 3rem;
+}
+
+li:nth-child(even) {
+  font-size: 4rem;
+}
+
+li:not(:hover) {
+  text-decoration: line-through;
+  color: rgb(164, 22, 22);
+}
